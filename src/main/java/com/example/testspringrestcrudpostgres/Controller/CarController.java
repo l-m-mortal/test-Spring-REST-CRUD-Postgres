@@ -9,7 +9,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/car")
-
 public class CarController {
 
     private final CarService carService;
@@ -33,7 +32,7 @@ public class CarController {
         return carService.saveCar(carEntity);
     }
 
-    @PostMapping
+    @PutMapping
     public CarEntity updateCar(@RequestBody CarEntity carEntity) {
         return carService.updateCar(carEntity);
     }
