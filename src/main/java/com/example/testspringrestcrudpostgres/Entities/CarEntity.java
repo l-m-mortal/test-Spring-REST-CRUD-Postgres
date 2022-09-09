@@ -1,6 +1,4 @@
-package com.example.testspringrestcrudpostgres.Entity;
-
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
+package com.example.testspringrestcrudpostgres.Entities;
 
 import javax.persistence.*;
 

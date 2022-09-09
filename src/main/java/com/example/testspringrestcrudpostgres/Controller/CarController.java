@@ -1,7 +1,7 @@
 package com.example.testspringrestcrudpostgres.Controller;
 
-import com.example.testspringrestcrudpostgres.Entity.CarEntity;
-import com.example.testspringrestcrudpostgres.Service.CarService;
+import com.example.testspringrestcrudpostgres.Entities.CarEntity;
+import com.example.testspringrestcrudpostgres.Services.ICarService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,9 +11,9 @@ import java.util.Optional;
 @RequestMapping("/car")
 public class CarController {
 
-    private final CarService carService;
+    private final ICarService carService;
 
-    public CarController(CarService carService) {
+    public CarController(ICarService carService) {
         this.carService = carService;
     }
 

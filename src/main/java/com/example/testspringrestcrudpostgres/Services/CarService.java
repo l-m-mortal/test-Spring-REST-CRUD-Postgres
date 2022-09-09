@@ -1,18 +1,18 @@
-package com.example.testspringrestcrudpostgres.Service;
+package com.example.testspringrestcrudpostgres.Services;
 
-import com.example.testspringrestcrudpostgres.Entity.CarEntity;
-import com.example.testspringrestcrudpostgres.Repository.CarRepository;
+import com.example.testspringrestcrudpostgres.Entities.CarEntity;
+import com.example.testspringrestcrudpostgres.Repository.ICarRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class CarServiceImpl implements CarService {
+public class CarService implements ICarService {
 
-    private final CarRepository carRepository;
+    private final ICarRepository carRepository;
 
-    public CarServiceImpl(CarRepository carRepository) {
+    public CarService(ICarRepository carRepository) {
         this.carRepository = carRepository;
     }
 

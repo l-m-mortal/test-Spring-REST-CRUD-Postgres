@@ -1,10 +1,14 @@
 package com.example.testspringrestcrudpostgres.Repository;
 
-import com.example.testspringrestcrudpostgres.Entity.CarEntity;
+import com.example.testspringrestcrudpostgres.Entities.CarEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
-public interface CarRepository extends JpaRepository<CarEntity, Long> {
+public interface ICarRepository extends JpaRepository<CarEntity, Long> {
+
+
 
 }
